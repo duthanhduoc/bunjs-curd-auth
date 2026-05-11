@@ -1,0 +1,21 @@
+{
+  "name": "bun-api",
+  "version": "1.0.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "seed": "bun run src/db/seed.ts",
+    "reset:seed": "bun run src/db/reset.ts && bun run src/db/seed.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "hono": "^4.7.10",
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/ms": "^2.1.0"
+  }
+}
